@@ -125,6 +125,23 @@ const myFunction = (n) => {
 
 myFunction(n); */
 
+/* JS Snack 7
+Stampa le potenze di 2 fino a 1000. */
 
-    
-    
+const base = 2;
+const esponente = 1000;
+let i = 0;
+let potenza;
+let arrayPotenza = [];
+
+const myFunction = () => {
+    while (i <= esponente) {
+        potenza = base ** i;
+        arrayPotenza.push(potenza);
+        i++
+    }
+    return potenza;
+}
+
+myFunction();
+console.log(arrayPotenza);
